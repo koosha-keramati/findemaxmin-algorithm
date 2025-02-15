@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Arabic";
+}
+
+body{
+    background-color:  rgba(137 , 43 , 226 , 0.687);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    position: absolute;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px 25px;
+    top: 250px;
+}
+.top{
+    top: 60px;
+    animation: animatetop 1s;
+}
+input[type="number"]{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px 5px;
+}
+.con_button{
+    display: flex;
+    gap: 10px;
+}
+.button_enter , .button_clear{
+    width: 50%;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5PX 0;
+}
+.button_clear:hover{
+    background-color: rgb(100, 26, 170);
+}
+.button_enter:hover{
+    background-color: rgb(100, 26, 170);
+}
+.show_info{
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+    top: 420px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 10px;
+}
+.top2{
+    top: 250px;
+    animation: animatetop2 1s;
+}
+@keyframes animatetop{
+    from{
+        top :250px;
+        opacity: 0;
+    }
+    to{
+        top: 60px;
+        opacity: 1;
+    }
+}   
+@keyframes animatetop2{
+    from{
+        top :420px;
+        opacity: 0;
+    }
+    to{
+        top: 250px;
+        opacity: 1;
+    }
+}     
